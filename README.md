@@ -1,0 +1,1 @@
+# structural-delete-workspace
