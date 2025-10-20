@@ -4,7 +4,7 @@
   "description": "Deletes a Structural workspace",
   "main": "index.js",
   "scripts": {
-    "build": "ncc build index.js -o dist"
+    "package": "ncc build index.js -o dist"
   },
   "dependencies": {
     "@actions/core": "^1.10.0"
