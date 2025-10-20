@@ -1,0 +1,16 @@
+name: Delete Workspace
+description: Deletes a Structural Workspace
+inputs:
+  structural-url:
+    description: Structural API base URL
+    required: false
+    default: 'https://app.tonic.ai'
+  structural-api-key:
+    description: Structural API Key
+    required: true
+  workspace-id:
+    required: true
+    description: ID of workspace to delete
+runs:
+  using: node20
+  main: dist/index.js

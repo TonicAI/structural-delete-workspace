@@ -1,0 +1,15 @@
+{
+  "name": "delete-workspace",
+  "version": "1.0.0",
+  "description": "Deletes a Structural workspace",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js -o dist"
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.1"
+  }
+}
