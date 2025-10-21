@@ -40,7 +40,7 @@ async function run() {
       headers: {
         'Authorization': `apikey ${apiKey}`,
         'User-Agent': 'Tonic-Github-Action',
-        'X-GitHub-Action': 'copy-workspace',
+        'X-GitHub-Action': 'delete-workspace',
         'X-GitHub-Action-Version': version
       }
     };
