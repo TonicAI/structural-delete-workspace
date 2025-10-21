@@ -27514,6 +27514,14 @@ function parseParams (str) {
 module.exports = parseParams
 
 
+/***/ }),
+
+/***/ 8330:
+/***/ ((module) => {
+
+"use strict";
+module.exports = {"rE":"1.0.0"};
+
 /***/ })
 
 /******/ 	});
@@ -27587,6 +27595,7 @@ async function run() {
     }
 
     const url = new URL(`/api/workspace/${encodeURIComponent(workspaceId)}`, apiHost);
+    const version = (__nccwpck_require__(8330)/* .version */ .rE);
 
     const options = {
       hostname: url.hostname,
@@ -27594,7 +27603,10 @@ async function run() {
       path: url.pathname,
       method: 'DELETE',
       headers: {
-        'Authorization': `apikey ${apiKey}`
+        'Authorization': `apikey ${apiKey}`,
+        'User-Agent': 'Tonic-Github-Action',
+        'X-GitHub-Action': 'delete-workspace',
+        'X-GitHub-Action-Version': version
       }
     };
 
