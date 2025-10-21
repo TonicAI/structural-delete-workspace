@@ -30,6 +30,7 @@ async function run() {
     }
 
     const url = new URL(`/api/workspace/${encodeURIComponent(workspaceId)}`, apiHost);
+    const version = require('./package.json').version;
 
     const options = {
       hostname: url.hostname,
@@ -37,7 +38,10 @@ async function run() {
       path: url.pathname,
       method: 'DELETE',
       headers: {
-        'Authorization': `apikey ${apiKey}`
+        'Authorization': `apikey ${apiKey}`,
+        'User-Agent': 'Tonic-Github-Action',
+        'X-GitHub-Action': 'copy-workspace',
+        'X-GitHub-Action-Version': version
       }
     };
 
