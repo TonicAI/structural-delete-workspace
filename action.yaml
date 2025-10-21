@@ -1,5 +1,6 @@
 name: Delete Workspace
 description: Deletes a Structural Workspace
+author: 'Tonic AI'
 inputs:
   structural-url:
     description: Structural API base URL
