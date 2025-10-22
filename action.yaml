@@ -1,5 +1,8 @@
-name: Delete Workspace
-description: Deletes a Structural Workspace
+name: Delete Structural Workspace
+description: Deletes a Tonic Structural Workspace
+branding:
+  icon: "trash-2"
+  color: "blue"
 author: 'Tonic AI'
 inputs:
   structural-url:
